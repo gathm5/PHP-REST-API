@@ -6,7 +6,11 @@ class Controller
 
     function __construct($view = null)
     {
-        $this->view = new DesktopView();
+        if ($view) {
+            $this->view = new ServerView();
+        } else {
+            $this->view = new DesktopView();
+        }
     }
 
     public function loadModel($name)
