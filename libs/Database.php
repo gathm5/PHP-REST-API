@@ -8,4 +8,5 @@ class Database extends PDO
         parent::__construct("mysql:host=findeasyrentals.db.9229429.hostedresource.com;dbname=findeasyrentals", "findeasyrentals", "Renteasy!1");
     }
 
+
 }
